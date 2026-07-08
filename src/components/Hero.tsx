@@ -39,7 +39,7 @@ function LiveStat({
   )
 }
 
-export function Hero() {
+export function Hero({ onNavigate }: { onNavigate: (path: string) => void }) {
   return (
     <section
       data-screen-label="01 Arrival"
@@ -90,17 +90,40 @@ export function Hero() {
           padding: '36px 48px',
           position: 'relative',
           zIndex: 2,
+          flexWrap: 'wrap',
+          gap: 20
         }}
       >
-        <div style={{ fontFamily: DISPLAY, fontSize: 20, letterSpacing: '0.34em', fontWeight: 500 }}>
-          KATIKIYA
-        </div>
         <div
-          className="ktk-header-est"
-          style={{ fontFamily: MONO, fontSize: 10, letterSpacing: '0.3em', color: '#9A8C74' }}
+          onClick={() => onNavigate('/')}
+          style={{ fontFamily: DISPLAY, fontSize: 20, letterSpacing: '0.34em', fontWeight: 500, cursor: 'pointer' }}
         >
-          EST. MMXXVI — THE INTELLIGENT DWELLING
+          KATIKAYA
         </div>
+        <nav style={{ display: 'flex', gap: 32, alignItems: 'center' }}>
+          <a
+            href="/eldercare"
+            onClick={(e) => { e.preventDefault(); onNavigate('/eldercare'); }}
+            className="ktk-reserve"
+            style={{ fontFamily: MONO, fontSize: 10, letterSpacing: '0.28em', color: '#9A8C74' }}
+          >
+            ELDER CARE
+          </a>
+          <a
+            href="/toddlercare"
+            onClick={(e) => { e.preventDefault(); onNavigate('/toddlercare'); }}
+            className="ktk-reserve"
+            style={{ fontFamily: MONO, fontSize: 10, letterSpacing: '0.28em', color: '#9A8C74' }}
+          >
+            TODDLER CARE
+          </a>
+          <span
+            className="ktk-header-est"
+            style={{ fontFamily: MONO, fontSize: 10, letterSpacing: '0.3em', color: '#6E6350', borderLeft: '1px solid rgba(195,154,87,0.3)', paddingLeft: 20 }}
+          >
+            EST. MMXXVI
+          </span>
+        </nav>
       </header>
 
       <div
@@ -134,28 +157,28 @@ export function Hero() {
           style={{
             fontFamily: DISPLAY,
             fontWeight: 400,
-            fontSize: 'clamp(44px, 10vw, 156px)',
+            fontSize: 'clamp(64px, 10vw, 156px)',
             lineHeight: 1.0,
             margin: 0,
             letterSpacing: '-0.01em',
           }}
         >
-          The home,
+          Your home has
           <br />
-          <em style={{ fontStyle: 'italic', color: '#EBD3A2' }}>awakened.</em>
+          <em style={{ fontStyle: 'italic', color: '#EBD3A2' }}>six senses</em> now.
         </h1>
         <p
           data-reveal
           data-delay="280"
           style={{
-            maxWidth: 460,
+            maxWidth: 500,
             fontSize: 17,
             lineHeight: 1.7,
             color: '#B7A98E',
-            margin: 'clamp(28px, 5vh, 42px) 0 clamp(36px, 6vh, 56px)',
+            margin: '42px 0 56px',
           }}
         >
-          Your home has been asleep. We are building the part that wakes it up.
+          It sees, feels, and understands everything under your roof — and keeps what it learns inside your walls.
         </p>
         <a
           href="#the-word"
@@ -192,9 +215,9 @@ export function Hero() {
           flexWrap: 'wrap',
         }}
       >
-        <LiveStat delay="3.2s" label="WATER" live="water" value="2.8" unit="L/MIN" />
-        <LiveStat delay="2.6s .6s" label="ENERGY" live="energy" value="3.12" unit="KW SOLAR" />
-        <LiveStat delay="3.8s 1.1s" label="PRESENCE" live="presence" value="3" unit="ROOMS ALIVE" />
+        <LiveStat delay="3.2s" label="PULSE" live="devices" value="24" unit="DEVICES" />
+        <LiveStat delay="2.6s .6s" label="FLOW" live="water" value="2.8" unit="L/MIN" />
+        <LiveStat delay="3.8s 1.1s" label="PRESENCE" live="presence" value="3" unit="ROOMS" />
       </div>
     </section>
   )

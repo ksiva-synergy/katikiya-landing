@@ -172,9 +172,9 @@ function WaterInstrument({ active, onClick }: { active: boolean; onClick?: () =>
         </div>
         <div style={{ position: 'absolute', right: '-2%', top: '44%', width: '16%', height: 1, background: annoLine }} />
         <div style={{ position: 'absolute', right: '-4%', top: '47%', textAlign: 'right', lineHeight: 2, ...annoText }}>
-          BRASS COLLAR
+          FLOW CORE
           <br />
-          <span style={{ color: '#6E6350' }}>FLOW CORE / NO LENS</span>
+          <span style={{ color: '#6E6350' }}>BRASS COLLAR / NO LENS</span>
         </div>
       </div>
     </div>
@@ -355,7 +355,7 @@ function PresenceInstrument({ active, onClick }: { active: boolean; onClick?: ()
         <div style={{ position: 'absolute', left: '50%', bottom: '-19%', transform: 'translateX(-50%)', ...annoText }}>Ø 152 MM</div>
         <div style={{ position: 'absolute', right: '-2%', top: '6%', width: '14%', height: 1, background: annoLine }} />
         <div style={{ position: 'absolute', right: '-4%', top: '9%', textAlign: 'right', lineHeight: 2, ...annoText }}>
-          LISTENING DOME
+          PRESENCE DOME
           <br />
           <span style={{ color: '#6E6350' }}>NO LENS / NO MIC</span>
         </div>
@@ -410,17 +410,17 @@ export function Atelier() {
 
         <div className="ktk-atelier-grid">
           <Card
-            code="I / WATER"
-            name="The Water Sense"
-            blurb="The house learns every line and valve it owns."
+            code="I / FLOW"
+            name="The Flow Sense"
+            blurb="Your home feels every drop and every watt."
             onClick={() => handleToggle('water')}
           >
             <WaterInstrument active={activeId === 'water'} onClick={() => handleToggle('water')} />
           </Card>
           <Card
-            code="II / ENERGY"
-            name="The Energy Sense"
-            blurb="Sun, storage, and use — read as one ledger."
+            code="II / SONAR"
+            name="The Sonar Sense"
+            blurb="Precision location for everything you own."
             delay="120"
             onClick={() => handleToggle('energy')}
           >

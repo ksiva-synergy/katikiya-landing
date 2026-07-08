@@ -68,7 +68,9 @@ export class Engine {
     presence: 3,
     liters: 414,
     stored: 86,
-    temp: 21.4,
+    temp: 28.4,
+    devices: 24,
+    signal: 92,
   }
   private nextT: Record<string, number> = {}
 
@@ -189,14 +191,22 @@ export class Engine {
         tele.presence = 2 + Math.round(fbm(t * 0.02) * 2.4)
         continue
       }
+      if (k === 'devices') {
+        tele.devices = 22 + Math.round(fbm(t * 0.01 + 10) * 4)
+        continue
+      }
+      if (k === 'signal') {
+        tele.signal = 88 + Math.round(fbm(t * 0.008 + 20) * 8)
+        continue
+      }
       const tg =
         k === 'water'
           ? 1.6 + fbm(t * 0.05) * 2.4
           : k === 'energy'
-            ? Math.max(0.05, (this.shared.day === undefined ? 0.8 : this.shared.day) * 4.4 + (fbm(t * 0.1) - 0.5))
+            ? Math.max(0.05, 3.2 + (fbm(t * 0.1) - 0.5) * 2)
             : k === 'stored'
-              ? (this.shared.chg === undefined ? 0.7 : this.shared.chg) * 100
-              : 21.2 + fbm(t * 0.01) * 0.9
+              ? 70 + fbm(t * 0.03) * 20
+              : 27.5 + fbm(t * 0.01) * 2.5
       tele[k] += (tg - tele[k]) * (0.2 + Math.random() * 0.3) + (Math.random() - 0.5) * 0.05
     }
     for (const el of this.lives) {
@@ -208,6 +218,8 @@ export class Engine {
       else if (k === 'liters') el.textContent = String(tele.liters)
       else if (k === 'stored') el.textContent = String(Math.round(tele.stored))
       else if (k === 'temp') el.textContent = tele.temp.toFixed(1)
+      else if (k === 'devices') el.textContent = String(tele.devices)
+      else if (k === 'signal') el.textContent = String(Math.round(tele.signal))
     }
   }
 

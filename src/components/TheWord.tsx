@@ -28,11 +28,9 @@ export function TheWord() {
         data-delay="100"
         style={{
           fontFamily: DISPLAY,
-          fontStyle: 'normal',
-          display: 'inline-block',
-          transform: 'skewX(-10deg)',
+          fontStyle: 'italic',
           fontWeight: 400,
-          fontSize: 'clamp(42px, 8.5vw, 128px)',
+          fontSize: 'clamp(56px, 8.5vw, 128px)',
           color: 'rgba(195,154,87,0.5)',
           lineHeight: 1,
         }}
@@ -61,7 +59,7 @@ export function TheWord() {
           lineHeight: 1,
         }}
       >
-        KATIKIYA
+        KATIKAYA
       </div>
       <p
         data-reveal

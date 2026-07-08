@@ -1,4 +1,4 @@
-/* Katikiya — global stage */
+/* Katikaya — global stage */
 :root {
   --ktk-bg: #0c0a07;
   --ktk-bg-2: #120e0a;
@@ -93,6 +93,15 @@ button {
   }
   100% {
     transform: translateX(260%);
+  }
+}
+@keyframes ktkManasGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 80px 24px rgba(195, 154, 87, 0.08), inset 0 0 0 1px rgba(195, 154, 87, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 100px 32px rgba(195, 154, 87, 0.14), inset 0 0 0 1px rgba(195, 154, 87, 0.45);
   }
 }
 
