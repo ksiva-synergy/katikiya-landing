@@ -14,16 +14,7 @@ export function Marque() {
       }}
     >
       <div
-        className="ktk-pad"
-        style={{
-          maxWidth: 1240,
-          margin: '0 auto',
-          padding: '0 48px',
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit,minmax(360px,1fr))',
-          gap: 'clamp(48px,8vw,140px)',
-          alignItems: 'start',
-        }}
+        className="ktk-pad ktk-marque-grid"
       >
         <div>
           <div data-reveal style={{ fontFamily: MONO, fontSize: 10, letterSpacing: '0.42em', color: '#6E6350', marginBottom: 28 }}>
@@ -32,7 +23,7 @@ export function Marque() {
           <h2
             data-reveal
             data-delay="100"
-            style={{ fontFamily: DISPLAY, fontWeight: 400, fontSize: 'clamp(38px,4.5vw,68px)', lineHeight: 1.15, margin: '0 0 32px' }}
+            style={{ fontFamily: DISPLAY, fontWeight: 400, fontSize: 'clamp(28px,4.5vw,68px)', lineHeight: 1.15, margin: '0 0 32px' }}
           >
             Built by hands that understand buildings.
           </h2>
@@ -51,7 +42,7 @@ export function Marque() {
           <div style={{ fontFamily: MONO, fontSize: 10, letterSpacing: '0.36em', color: '#C39A57', marginBottom: 20 }}>
             THE FOUNDING CIRCLE
           </div>
-          <div style={{ fontFamily: DISPLAY, fontSize: 'clamp(24px,2.4vw,34px)', lineHeight: 1.3, marginBottom: 16 }}>
+          <div style={{ fontFamily: DISPLAY, fontSize: 'clamp(20px,2.4vw,34px)', lineHeight: 1.3, marginBottom: 16 }}>
             A hundred homes will wake first.
           </div>
           <p style={{ fontSize: 14, lineHeight: 1.75, color: '#9A8C74', margin: '0 0 36px' }}>

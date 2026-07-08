@@ -30,7 +30,7 @@ export function TheWord() {
           fontFamily: DISPLAY,
           fontStyle: 'italic',
           fontWeight: 400,
-          fontSize: 'clamp(56px, 8.5vw, 128px)',
+          fontSize: 'clamp(42px, 8.5vw, 128px)',
           color: 'rgba(195,154,87,0.5)',
           lineHeight: 1,
         }}
@@ -54,7 +54,7 @@ export function TheWord() {
         style={{
           fontFamily: DISPLAY,
           fontWeight: 500,
-          fontSize: 'clamp(40px, 5.5vw, 76px)',
+          fontSize: 'clamp(32px, 5.5vw, 76px)',
           letterSpacing: '0.22em',
           lineHeight: 1,
         }}

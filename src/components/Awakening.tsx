@@ -3,16 +3,6 @@ import type { CSSProperties, ReactNode } from 'react'
 const DISPLAY = "'Bodoni Moda', serif"
 const MONO = "'IBM Plex Mono', monospace"
 
-const gridRow: CSSProperties = {
-  maxWidth: 1240,
-  margin: '18vh auto 0',
-  padding: '0 48px',
-  display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fit,minmax(400px,1fr))',
-  gap: 'clamp(48px,6vw,96px)',
-  alignItems: 'center',
-}
-
 const figShell: CSSProperties = {
   border: '1px solid rgba(195,154,87,0.18)',
   aspectRatio: '4 / 3',
@@ -47,7 +37,7 @@ const numLabel: CSSProperties = {
 const heading: CSSProperties = {
   fontFamily: DISPLAY,
   fontWeight: 400,
-  fontSize: 'clamp(32px,3.2vw,48px)',
+  fontSize: 'clamp(26px,3.2vw,48px)',
   lineHeight: 1.2,
   margin: '0 0 24px',
 }
@@ -135,7 +125,7 @@ export function Awakening() {
           style={{
             fontFamily: DISPLAY,
             fontWeight: 400,
-            fontSize: 'clamp(44px,5.5vw,84px)',
+            fontSize: 'clamp(34px,5.5vw,84px)',
             lineHeight: 1.08,
             margin: 0,
             maxWidth: 820,
@@ -148,7 +138,7 @@ export function Awakening() {
       </div>
 
       {/* 01 — WATER */}
-      <div style={{ ...gridRow, marginTop: '16vh' }} className="ktk-pad">
+      <div className="ktk-grid-row ktk-pad" style={{ marginTop: '16vh' }}>
         <div data-reveal style={figShell}>
           <canvas data-viz="water" style={canvasStyle} />
           <div style={figTag}>FIG. 01 — FLOW TELEMETRY</div>
@@ -186,8 +176,8 @@ export function Awakening() {
       </div>
 
       {/* 02 — ENERGY (reversed) */}
-      <div style={{ ...gridRow, direction: 'rtl' }} className="ktk-pad">
-        <div data-reveal style={{ ...figShell, direction: 'ltr' }}>
+      <div className="ktk-grid-row reversed ktk-pad">
+        <div data-reveal style={figShell}>
           <canvas data-viz="energy" style={canvasStyle} />
           <div style={figTag}>FIG. 02 — METABOLISM</div>
           <div
@@ -207,27 +197,25 @@ export function Awakening() {
             EXPORT / 0.4 KW → GRID
           </div>
         </div>
-        <div style={{ direction: 'ltr' }}>
-          <Copy
-            index="02"
-            label="ENERGY"
-            title="It knows what the sun gave, and what remains."
-            stats={
-              <>
-                <Stat live="energy" value="3.12" unit="KW FROM SUN" />
-                <Stat live="stored" value="86" unit="% HELD FOR NIGHT" />
-              </>
-            }
-          >
-            The house understands its own metabolism — what arrives from the roof, what the rooms
-            consume, what the batteries hold for the night. Nothing is guessed. Everything is accounted
-            for.
-          </Copy>
-        </div>
+        <Copy
+          index="02"
+          label="ENERGY"
+          title="It knows what the sun gave, and what remains."
+          stats={
+            <>
+              <Stat live="energy" value="3.12" unit="KW FROM SUN" />
+              <Stat live="stored" value="86" unit="% HELD FOR NIGHT" />
+            </>
+          }
+        >
+          The house understands its own metabolism — what arrives from the roof, what the rooms
+          consume, what the batteries hold for the night. Nothing is guessed. Everything is accounted
+          for.
+        </Copy>
       </div>
 
       {/* 03 — PRESENCE */}
-      <div style={gridRow} className="ktk-pad">
+      <div className="ktk-grid-row ktk-pad">
         <div data-reveal style={figShell}>
           <canvas data-viz="presence" style={canvasStyle} />
           <div style={figTag}>FIG. 03 — RHYTHM OF ROOMS</div>
@@ -267,7 +255,7 @@ export function Awakening() {
       </div>
 
       {/* FIG 04 — SOVEREIGNTY */}
-      <div style={{ maxWidth: 900, margin: '24vh auto 10vh', padding: '0 48px', textAlign: 'center' }} className="ktk-pad">
+      <div className="ktk-pad ktk-sovereignty-row">
         <div
           data-reveal
           style={{ width: 'min(420px,80%)', aspectRatio: '5 / 4', margin: '0 auto 64px', position: 'relative' }}
@@ -295,7 +283,7 @@ export function Awakening() {
           style={{
             fontFamily: DISPLAY,
             fontWeight: 400,
-            fontSize: 'clamp(36px,4.5vw,64px)',
+            fontSize: 'clamp(28px,4.5vw,64px)',
             lineHeight: 1.18,
             margin: '0 0 28px',
           }}

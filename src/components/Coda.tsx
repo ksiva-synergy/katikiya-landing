@@ -27,7 +27,7 @@ export function Coda() {
           pointerEvents: 'none',
         }}
       />
-      <div data-reveal style={{ fontFamily: DISPLAY, fontSize: 'clamp(40px,6vw,88px)', letterSpacing: '0.24em', fontWeight: 500, position: 'relative' }}>
+      <div data-reveal style={{ fontFamily: DISPLAY, fontSize: 'clamp(32px,6vw,88px)', letterSpacing: '0.24em', fontWeight: 500, position: 'relative' }}>
         KATIKAYA
       </div>
       <div data-reveal data-delay="120" style={{ fontFamily: DISPLAY, fontStyle: 'italic', fontSize: 18, color: 'rgba(195,154,87,0.55)', marginTop: 18 }}>

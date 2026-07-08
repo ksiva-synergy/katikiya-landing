@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import type { CSSProperties, ReactNode } from 'react'
 
 const DISPLAY = "'Bodoni Moda', serif"
@@ -32,18 +33,21 @@ function Card({
   blurb,
   children,
   delay,
+  onClick,
 }: {
   code: string
   name: string
   blurb: string
   children: ReactNode
   delay?: string
+  onClick?: () => void
 }) {
   return (
     <div
       data-reveal
       data-delay={delay}
-      style={{ background: '#120E0A', padding: 32, display: 'flex', flexDirection: 'column' }}
+      onClick={onClick}
+      style={{ background: '#120E0A', padding: 32, display: 'flex', flexDirection: 'column', cursor: 'pointer' }}
     >
       {children}
       <div style={{ fontFamily: MONO, fontSize: 9, letterSpacing: '0.3em', color: '#6E6350', marginBottom: 12 }}>
@@ -54,6 +58,7 @@ function Card({
       <a
         href="#the-marque"
         className="ktk-reserve"
+        onClick={(e) => e.stopPropagation()}
         style={{
           fontFamily: MONO,
           fontSize: 10,
@@ -70,9 +75,9 @@ function Card({
   )
 }
 
-function WaterInstrument() {
+function WaterInstrument({ active, onClick }: { active: boolean; onClick?: () => void }) {
   return (
-    <div className="ktk-instrument" data-instrument="water" style={stageBase}>
+    <div className={`ktk-instrument ${active ? 'active' : ''}`} data-instrument="water" style={stageBase} onClick={(e) => { e.stopPropagation(); onClick?.(); }}>
       <div
         data-glow
         style={{
@@ -176,9 +181,9 @@ function WaterInstrument() {
   )
 }
 
-function EnergyInstrument() {
+function EnergyInstrument({ active, onClick }: { active: boolean; onClick?: () => void }) {
   return (
-    <div className="ktk-instrument" data-instrument="energy" style={stageBase}>
+    <div className={`ktk-instrument ${active ? 'active' : ''}`} data-instrument="energy" style={stageBase} onClick={(e) => { e.stopPropagation(); onClick?.(); }}>
       <div
         data-glow
         style={{
@@ -283,9 +288,9 @@ function EnergyInstrument() {
   )
 }
 
-function PresenceInstrument() {
+function PresenceInstrument({ active, onClick }: { active: boolean; onClick?: () => void }) {
   return (
-    <div className="ktk-instrument" data-instrument="presence" style={stageBase}>
+    <div className={`ktk-instrument ${active ? 'active' : ''}`} data-instrument="presence" style={stageBase} onClick={(e) => { e.stopPropagation(); onClick?.(); }}>
       <div
         data-glow
         style={{
@@ -360,6 +365,12 @@ function PresenceInstrument() {
 }
 
 export function Atelier() {
+  const [activeId, setActiveId] = useState<string | null>(null)
+
+  const handleToggle = (id: string) => {
+    setActiveId((prev) => (prev === id ? null : id))
+  }
+
   return (
     <section
       data-screen-label="04 The Atelier"
@@ -386,7 +397,7 @@ export function Atelier() {
             <div data-reveal style={{ fontFamily: MONO, fontSize: 10, letterSpacing: '0.42em', color: '#6E6350', marginBottom: 28 }}>
               MOVEMENT IV — THE ATELIER
             </div>
-            <h2 data-reveal data-delay="100" style={{ fontFamily: DISPLAY, fontWeight: 400, fontSize: 'clamp(44px,5.5vw,84px)', lineHeight: 1.08, margin: 0 }}>
+            <h2 data-reveal data-delay="100" style={{ fontFamily: DISPLAY, fontWeight: 400, fontSize: 'clamp(34px,5.5vw,84px)', lineHeight: 1.08, margin: 0 }}>
               Collection I
             </h2>
           </div>
@@ -397,23 +408,32 @@ export function Atelier() {
           </div>
         </div>
 
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))',
-            gap: 1,
-            background: 'rgba(195,154,87,0.14)',
-            border: '1px solid rgba(195,154,87,0.14)',
-          }}
-        >
-          <Card code="I / WATER" name="The Water Sense" blurb="The house learns every line and valve it owns.">
-            <WaterInstrument />
+        <div className="ktk-atelier-grid">
+          <Card
+            code="I / WATER"
+            name="The Water Sense"
+            blurb="The house learns every line and valve it owns."
+            onClick={() => handleToggle('water')}
+          >
+            <WaterInstrument active={activeId === 'water'} onClick={() => handleToggle('water')} />
           </Card>
-          <Card code="II / ENERGY" name="The Energy Sense" blurb="Sun, storage, and use — read as one ledger." delay="120">
-            <EnergyInstrument />
+          <Card
+            code="II / ENERGY"
+            name="The Energy Sense"
+            blurb="Sun, storage, and use — read as one ledger."
+            delay="120"
+            onClick={() => handleToggle('energy')}
+          >
+            <EnergyInstrument active={activeId === 'energy'} onClick={() => handleToggle('energy')} />
           </Card>
-          <Card code="III / PRESENCE" name="The Presence Sense" blurb="The rhythm of the rooms, kept without cameras." delay="240">
-            <PresenceInstrument />
+          <Card
+            code="III / PRESENCE"
+            name="The Presence Sense"
+            blurb="The rhythm of the rooms, kept without cameras."
+            delay="240"
+            onClick={() => handleToggle('presence')}
+          >
+            <PresenceInstrument active={activeId === 'presence'} onClick={() => handleToggle('presence')} />
           </Card>
         </div>
 

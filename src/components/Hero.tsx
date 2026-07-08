@@ -134,7 +134,7 @@ export function Hero() {
           style={{
             fontFamily: DISPLAY,
             fontWeight: 400,
-            fontSize: 'clamp(64px, 10vw, 156px)',
+            fontSize: 'clamp(44px, 10vw, 156px)',
             lineHeight: 1.0,
             margin: 0,
             letterSpacing: '-0.01em',
@@ -152,7 +152,7 @@ export function Hero() {
             fontSize: 17,
             lineHeight: 1.7,
             color: '#B7A98E',
-            margin: '42px 0 56px',
+            margin: 'clamp(28px, 5vh, 42px) 0 clamp(36px, 6vh, 56px)',
           }}
         >
           Your home has been asleep. We are building the part that wakes it up.

@@ -16,7 +16,7 @@ export function BeyondHome() {
         style={{
           fontFamily: DISPLAY,
           fontWeight: 400,
-          fontSize: 'clamp(34px,4.5vw,64px)',
+          fontSize: 'clamp(26px,4.5vw,64px)',
           lineHeight: 1.25,
           margin: '0 auto',
           maxWidth: 840,
