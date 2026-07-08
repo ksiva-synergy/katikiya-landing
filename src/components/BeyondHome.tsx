@@ -138,7 +138,7 @@ export function BeyondHome({ onNavigate }: BeyondHomeProps) {
 
       <div data-reveal data-delay="340" style={{ marginTop: 32 }}>
         <a
-          href="mailto:private@katikaya.com"
+          href="mailto:private@katikiya.com"
           style={{
             fontFamily: MONO,
             fontSize: 10,

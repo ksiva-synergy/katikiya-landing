@@ -48,9 +48,31 @@ export function Toddlercare({ onNavigate }: ToddlercareProps) {
         <div style={{ position: 'absolute', left: '50%', bottom: '-32vh', width: '130vw', height: '72vh', borderRadius: '50%', background: 'radial-gradient(ellipse at center, rgba(195,154,87,0.2) 0%, rgba(195,154,87,0.06) 42%, rgba(12,10,7,0) 70%)', animation: 'ktkGlow 11s ease-in-out infinite', pointerEvents: 'none', transform: 'translateX(-50%)' }}></div>
 
         <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '28px 48px', position: 'relative', zIndex: 2, flexWrap: 'wrap', gap: 16 }}>
-          <div style={{ display: 'flex', alignItems: 'baseline', gap: 10, cursor: 'pointer' }} onClick={() => onNavigate('/')}>
-            <span style={{ fontFamily: DISPLAY, fontSize: 22, letterSpacing: '0.3em', fontWeight: 500 }}>DWELL</span>
-            <span style={{ fontFamily: MONO, fontSize: 10, letterSpacing: '0.2em', color: '#9A8C74', borderLeft: '1px solid rgba(195,154,87,0.3)', paddingLeft: 10 }}>FOR DAYCARES</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
+            <a
+              href="/"
+              onClick={(e) => { e.preventDefault(); onNavigate('/'); }}
+              style={{
+                fontFamily: MONO,
+                fontSize: 10,
+                letterSpacing: '0.2em',
+                color: '#EDE4D3',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 6,
+                border: '1px solid rgba(195,154,87,0.3)',
+                padding: '8px 14px',
+                borderRadius: 2,
+                cursor: 'pointer'
+              }}
+              className="ktk-begin"
+            >
+              ← BACK
+            </a>
+            <div style={{ display: 'flex', alignItems: 'baseline', gap: 10, cursor: 'pointer' }} onClick={() => onNavigate('/')}>
+              <span style={{ fontFamily: DISPLAY, fontSize: 22, letterSpacing: '0.3em', fontWeight: 500 }}>DWELL</span>
+              <span style={{ fontFamily: MONO, fontSize: 10, letterSpacing: '0.2em', color: '#9A8C74', borderLeft: '1px solid rgba(195,154,87,0.3)', paddingLeft: 10 }}>FOR DAYCARES</span>
+            </div>
           </div>
           <nav style={{ display: 'flex', gap: 'clamp(16px,3vw,36px)', flexWrap: 'wrap' }}>
             <a href="#why-now" style={{ fontFamily: MONO, fontSize: 10, letterSpacing: '0.24em', color: '#9A8C74' }}>WHY NOW</a>

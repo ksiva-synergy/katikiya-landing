@@ -98,7 +98,7 @@ export function Hero({ onNavigate }: { onNavigate: (path: string) => void }) {
           onClick={() => onNavigate('/')}
           style={{ fontFamily: DISPLAY, fontSize: 20, letterSpacing: '0.34em', fontWeight: 500, cursor: 'pointer' }}
         >
-          KATIKAYA
+          KATIKIYA
         </div>
         <nav style={{ display: 'flex', gap: 32, alignItems: 'center' }}>
           <a
