@@ -1,25 +1,77 @@
-# CODING AGENTS: READ THIS FIRST
+# Katikaya — The home, awakened.
 
-This is a **handoff bundle** from Claude Design (claude.ai/design).
+A flagship single-scroll experience for **Katikaya**, an intelligent-living
+brand. Built in **React + TypeScript (Vite)** with all four ambient "figures"
+rendered in **WebGL**.
 
-A user mocked up designs in HTML/CSS/JS using an AI design tool, then exported this bundle so a coding agent can implement the designs for real.
+The site is the product demo: it senses and responds the way a Katikaya home
+does — continuous ambient motion, scroll-driven narrative reveals, magnetic
+CTAs, and live telemetry that ticks like real instruments.
 
-## What you should do — IMPORTANT
+## The seven movements
 
-**Read the chat transcripts first.** There are 1 chat transcript(s) in `chats/`. The transcripts show the full back-and-forth between the user and the design assistant — they tell you **what the user actually wants** and **where they landed** after iterating. Don't skip them. The final HTML files are the output, but the chat is where the intent lives.
+1. **Arrival / Hero** — cinematic statement with a live instrument strip
+2. **The Word** — the κατοικία founding-myth moment
+3. **The Awakening** — four live figures (Water · Energy · Presence · Sovereignty)
+4. **The Atelier** — Collection I, three code-rendered instrument sculptures
+5. **Beyond the Home** — a restrained B2B teaser
+6. **The Marque** — founder story + the Founding Circle
+7. **Coda** — the wordmark, the origin word, an invitation
 
-**Read `project/Katikaya.dc.html` in full.** The user had this file open when they triggered the handoff, so it's almost certainly the primary design they want built. Read it top to bottom — don't skim. Then **follow its imports**: open every file it pulls in (shared components, CSS, scripts) so you understand how the pieces fit together before you start implementing.
+## WebGL figures
 
-**If anything is ambiguous, ask the user to confirm before you start implementing.** It's much cheaper to clarify scope up front than to build the wrong thing.
+Every figure is a generative, noise-driven WebGL piece. The renderer
+(`src/webgl/Renderer.ts`) is a small immediate-mode WebGL2 layer that batches
+solid primitives into single draw calls and provides radial-gradient glows and
+glyph-texture text — so the crisp "engineering annotation" look is preserved
+while every pixel is rasterised by the GPU.
 
-## About the design files
+- **Fig. 01 — Water** — a streaming particle flow with pressure pulses and an
+  `ANOMALY / VALVE 3 / RESOLVED` leak-detection event
+- **Fig. 02 — Energy** — a breathing sun, an 80s day→dusk cycle, accumulating
+  house glow, a live battery gauge and `EXPORT → GRID` reverse flow
+- **Fig. 03 — Presence** — an architectural floorplan with migrating warm glows
+  and a live `PRESENCE / ROOM / HH:MM` tag (no cameras)
+- **Fig. 04 — Sovereignty** — data orbiting within the walls, reflected at the
+  boundary, with outside probes that die at the wall
 
-The design medium is **HTML/CSS/JS** — these are prototypes, not production code. Your job is to **recreate them pixel-perfectly** in whatever technology makes sense for the target codebase (React, Vue, native, whatever fits). Match the visual output; don't copy the prototype's internal structure unless it happens to fit.
+One `requestAnimationFrame` loop (`src/webgl/engine.ts`) drives all figures and
+the telemetry read-outs, tracks the cursor and scroll parallax, and honours
+`prefers-reduced-motion` with an elegant static fallback.
 
-**Don't render these files in a browser or take screenshots unless the user asks you to.** Everything you need — dimensions, colors, layout rules — is spelled out in the source. Read the HTML and CSS directly; a screenshot won't tell you anything they don't.
+## Develop
 
-## Bundle contents
+```bash
+npm install
+npm run dev      # start the dev server
+npm run build    # type-check + production build to dist/
+npm run preview  # serve the production build
+```
 
-- `README.md` — this file
-- `chats/` — conversation transcripts (read these!)
-- `project/` — the `# Katikaya — Design Brief## A flagship digital experience for an intelligent-li` project files (HTML prototypes, assets, components)
+## Structure
+
+```
+src/
+  App.tsx                 # composes the seven movements
+  components/             # Hero, TheWord, Awakening, Atelier, BeyondHome, Marque, Coda, Overlays
+  hooks/
+    useInteractions.ts    # scroll reveals + magnetic cursor
+    useEngine.ts          # boots the WebGL engine after fonts load
+  webgl/
+    Renderer.ts           # immediate-mode WebGL2 primitive renderer
+    engine.ts             # rAF loop, telemetry, cursor/parallax, reduced-motion
+    noise.ts              # deterministic value noise (hashN / vnoise / fbm / smooth)
+    figures/              # water · energy · presence · walls painters
+```
+
+## Design origin
+
+This site was implemented from a Claude Design handoff bundle. The original
+design brief and iteration transcript live in [`chats/`](./chats), and the
+exported HTML/CSS/JS prototypes in [`project/`](./project), kept for reference.
+
+Type: Bodoni Moda (display) · Instrument Sans (body) · IBM Plex Mono (technical).
+Palette: bronze-black stage, brass/champagne accent, cyan reserved for live data.
+
+Product stills in the Atelier are code-rendered concept objects — swap in real
+photography when it exists.
