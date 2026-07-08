@@ -30,7 +30,19 @@ export function Coda() {
       <div data-reveal style={{ fontFamily: DISPLAY, fontSize: 'clamp(32px,6vw,88px)', letterSpacing: '0.24em', fontWeight: 500, position: 'relative' }}>
         KATIKIYA
       </div>
-      <div data-reveal data-delay="120" style={{ fontFamily: DISPLAY, fontStyle: 'italic', fontSize: 18, color: 'rgba(195,154,87,0.55)', marginTop: 18 }}>
+      <div
+        data-reveal
+        data-delay="120"
+        style={{
+          fontFamily: DISPLAY,
+          fontStyle: 'normal',
+          display: 'inline-block',
+          transform: 'skewX(-10deg)',
+          fontSize: 18,
+          color: 'rgba(195,154,87,0.55)',
+          marginTop: 18,
+        }}
+      >
         κατοικία — to dwell
       </div>
       <p data-reveal data-delay="220" style={{ fontSize: 15, color: '#9A8C74', margin: '56px auto 0', maxWidth: 380, lineHeight: 1.8 }}>

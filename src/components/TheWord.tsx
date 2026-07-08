@@ -28,7 +28,9 @@ export function TheWord() {
         data-delay="100"
         style={{
           fontFamily: DISPLAY,
-          fontStyle: 'italic',
+          fontStyle: 'normal',
+          display: 'inline-block',
+          transform: 'skewX(-10deg)',
           fontWeight: 400,
           fontSize: 'clamp(42px, 8.5vw, 128px)',
           color: 'rgba(195,154,87,0.5)',
