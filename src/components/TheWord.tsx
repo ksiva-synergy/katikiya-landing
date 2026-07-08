@@ -1,4 +1,4 @@
-const DISPLAY = "'Bodoni Moda', serif"
+const DISPLAY = "'Bodoni Moda', 'GFS Didot', serif"
 const MONO = "'IBM Plex Mono', monospace"
 
 export function TheWord() {

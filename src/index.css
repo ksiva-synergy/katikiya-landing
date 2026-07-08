@@ -12,7 +12,7 @@
   --ktk-mono-faint: #4e4638;
   --ktk-cyan: #9fe8dc;
 
-  --font-display: 'Bodoni Moda', Georgia, serif;
+  --font-display: 'Bodoni Moda', 'GFS Didot', Georgia, serif;
   --font-body: 'Instrument Sans', system-ui, sans-serif;
   --font-mono: 'IBM Plex Mono', 'SFMono-Regular', monospace;
 }
