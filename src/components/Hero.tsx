@@ -93,7 +93,7 @@ export function Hero() {
         }}
       >
         <div style={{ fontFamily: DISPLAY, fontSize: 20, letterSpacing: '0.34em', fontWeight: 500 }}>
-          KATIKAYA
+          KATIKIYA
         </div>
         <div
           className="ktk-header-est"

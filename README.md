@@ -1,10 +1,10 @@
-# Katikaya — The home, awakened.
+# Katikiya — The home, awakened.
 
-A flagship single-scroll experience for **Katikaya**, an intelligent-living
+A flagship single-scroll experience for **Katikiya**, an intelligent-living
 brand. Built in **React + TypeScript (Vite)** with all four ambient "figures"
 rendered in **WebGL**.
 
-The site is the product demo: it senses and responds the way a Katikaya home
+The site is the product demo: it senses and responds the way a Katikiya home
 does — continuous ambient motion, scroll-driven narrative reveals, magnetic
 CTAs, and live telemetry that ticks like real instruments.
 

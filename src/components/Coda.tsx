@@ -28,7 +28,7 @@ export function Coda() {
         }}
       />
       <div data-reveal style={{ fontFamily: DISPLAY, fontSize: 'clamp(32px,6vw,88px)', letterSpacing: '0.24em', fontWeight: 500, position: 'relative' }}>
-        KATIKAYA
+        KATIKIYA
       </div>
       <div data-reveal data-delay="120" style={{ fontFamily: DISPLAY, fontStyle: 'italic', fontSize: 18, color: 'rgba(195,154,87,0.55)', marginTop: 18 }}>
         κατοικία — to dwell
@@ -45,12 +45,12 @@ export function Coda() {
         <a href="#the-marque" style={footLink}>
           THE CIRCLE
         </a>
-        <a href="mailto:private@katikaya.com" style={footLink}>
+        <a href="mailto:private@katikiya.com" style={footLink}>
           INQUIRIES
         </a>
       </div>
       <div style={{ fontFamily: MONO, fontSize: 9, letterSpacing: '0.24em', color: '#4E4638', marginTop: 80 }}>
-        © MMXXVI KATIKAYA — THE INTELLIGENT DWELLING
+        © MMXXVI KATIKIYA — THE INTELLIGENT DWELLING
       </div>
     </footer>
   )

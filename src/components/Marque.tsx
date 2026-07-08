@@ -28,7 +28,7 @@ export function Marque() {
             Built by hands that understand buildings.
           </h2>
           <p data-reveal data-delay="200" style={{ fontSize: 16, lineHeight: 1.85, color: '#B7A98E', margin: 0, maxWidth: 460 }}>
-            Katikaya comes from construction and hardware — from people who have poured foundations and
+            Katikiya comes from construction and hardware — from people who have poured foundations and
             pulled cable through walls. We did not guess at what a home is. We have built them. Now we are
             building the part that has always been missing: the part that knows.
           </p>

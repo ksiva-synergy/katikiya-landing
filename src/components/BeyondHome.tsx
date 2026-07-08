@@ -29,7 +29,7 @@ export function BeyondHome() {
       </h2>
       <div data-reveal data-delay="220" style={{ marginTop: 64 }}>
         <a
-          href="mailto:private@katikaya.com"
+          href="mailto:private@katikiya.com"
           style={{
             fontFamily: MONO,
             fontSize: 10,

@@ -59,7 +59,7 @@ export function TheWord() {
           lineHeight: 1,
         }}
       >
-        KATIKAYA
+        KATIKIYA
       </div>
       <p
         data-reveal

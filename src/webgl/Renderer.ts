@@ -1,6 +1,6 @@
 // A small immediate-mode WebGL2 renderer.
 //
-// The four Katikaya "figures" were originally drawn with the Canvas-2D API.
+// The four Katikiya "figures" were originally drawn with the Canvas-2D API.
 // This renderer exposes the same handful of primitives — filled rects, discs,
 // polylines, stroked rects/circles/arcs, radial-gradient glows and text — but
 // every one of them is rasterised by WebGL. Consecutive solid primitives are

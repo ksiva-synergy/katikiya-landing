@@ -1,4 +1,4 @@
-# Katikaya Design Brief
+# Katikiya Design Brief
 
 _Started 2026-07-08 11:10 UTC_
 
@@ -6,25 +6,25 @@ _Started 2026-07-08 11:10 UTC_
 
 ## User
 
-# Katikaya — Design Brief
+# Katikiya — Design Brief
 ## A flagship digital experience for an intelligent-living brand
 
 ---
 
 ## 1. The one-line brief
-Design the website that makes people *want* a smarter home before they even understand what the product is. Katikaya.com is not a product page — it is a destination where the idea of the intelligent home is dreamed up, the way a concept car reveal or an architecture magazine makes people rethink what's possible. The site itself must be the first proof of the brand's claim: that Katikaya operates at a level of design and technological sophistication above everything else in the category.
+Design the website that makes people *want* a smarter home before they even understand what the product is. Katikiya.com is not a product page — it is a destination where the idea of the intelligent home is dreamed up, the way a concept car reveal or an architecture magazine makes people rethink what's possible. The site itself must be the first proof of the brand's claim: that Katikiya operates at a level of design and technological sophistication above everything else in the category.
 
 ## 2. The brand
 
-**Name:** Katikaya — coined from the Greek **κατοικία (katoikía)**: to dwell, to inhabit. The brand owns this as a deliberate act of invention — an ancient word for dwelling, re-engineered for what dwelling is about to become. That tension is the brand: *the oldest human idea (home) meeting the newest technology (ambient intelligence).* Use it. The origin story should read like a founding myth, not a dictionary footnote.
+**Name:** Katikiya — coined from the Greek **κατοικία (katoikía)**: to dwell, to inhabit. The brand owns this as a deliberate act of invention — an ancient word for dwelling, re-engineered for what dwelling is about to become. That tension is the brand: *the oldest human idea (home) meeting the newest technology (ambient intelligence).* Use it. The origin story should read like a founding myth, not a dictionary footnote.
 
-**What Katikaya is:** An intelligent-living platform and curated devices atelier. The platform gives a home continuous awareness of itself — water flowing through its pipes, energy moving between sun, storage, and use, presence and rhythm within its rooms. Local-first by architecture: the home's intelligence lives *in* the home, sovereign, private, not rented from a distant cloud.
+**What Katikiya is:** An intelligent-living platform and curated devices atelier. The platform gives a home continuous awareness of itself — water flowing through its pipes, energy moving between sun, storage, and use, presence and rhythm within its rooms. Local-first by architecture: the home's intelligence lives *in* the home, sovereign, private, not rented from a distant cloud.
 
-**What Katikaya is not:** A gadget shop. A security-camera reseller. Another SaaS dashboard. The competitive set to visually *reject* is the entire mainstream smart-home aesthetic — Nest/Ring/Ecobee's friendly-corporate blandness AND the generic dark-mode SaaS template. Katikaya should look like neither. Its true visual peers are elsewhere: Bang & Olufsen, Aston Martin's digital presence, Gaggenau, Teenage Engineering, high-end architectural studios, concept-car microsites.
+**What Katikiya is not:** A gadget shop. A security-camera reseller. Another SaaS dashboard. The competitive set to visually *reject* is the entire mainstream smart-home aesthetic — Nest/Ring/Ecobee's friendly-corporate blandness AND the generic dark-mode SaaS template. Katikiya should look like neither. Its true visual peers are elsewhere: Bang & Olufsen, Aston Martin's digital presence, Gaggenau, Teenage Engineering, high-end architectural studios, concept-car microsites.
 
 ## 3. Positioning: "The home, awakened"
 
-The strategic idea: every other smart-home brand sells *devices that do tricks*. Katikaya sells *a home that is aware* — a living system. The site must dramatize this shift from object to organism.
+The strategic idea: every other smart-home brand sells *devices that do tricks*. Katikiya sells *a home that is aware* — a living system. The site must dramatize this shift from object to organism.
 
 Three pillars of awareness (the actual platform capabilities — present them as one nervous system, not three features):
 - **Water** — the home senses every liter moving through it; a leak is felt before it becomes damage
@@ -33,12 +33,12 @@ Three pillars of awareness (the actual platform capabilities — present them as
 
 Supporting proof points (weave in, don't list):
 - **Sovereign intelligence** — local-first architecture; the brain lives on-premise, data never has to leave the walls. Frame privacy as *luxury and control*, not compliance.
-- **Engineered, not assembled** — built by hands that come from construction and hardware, not a software team guessing at buildings. Katikaya understands homes as physical structures.
+- **Engineered, not assembled** — built by hands that come from construction and hardware, not a software team guessing at buildings. Katikiya understands homes as physical structures.
 - **The beginning of something** — this is a young marque at the start of its story. Frame early access as exclusivity: joining a founding circle, not signing up for a newsletter.
 
 ## 4. The experience concept: the site *is* the product demo
 
-This is the central creative demand. Since there is no live product to demo yet, **the website's own behavior must demonstrate what an intelligent home feels like.** The visitor should feel the site sensing and responding to them the way a Katikaya home senses and responds to its inhabitants.
+This is the central creative demand. Since there is no live product to demo yet, **the website's own behavior must demonstrate what an intelligent home feels like.** The visitor should feel the site sensing and responding to them the way a Katikiya home senses and responds to its inhabitants.
 
 Concretely, design for:
 - **A site that feels ambient and alive.** Subtle continuous motion — light shifting, data pulsing quietly, elements that breathe. Nothing static, nothing frantic. Think of the visual language of a home at dusk with intelligent lighting: calm, responsive, inevitable.
@@ -61,7 +61,7 @@ Concretely, design for:
 ## 6. Site architecture (a narrative in seven movements)
 
 1. **Arrival / Hero** — Full-viewport, cinematic. The home at night, awakening. One vast statement (direction: "The home, awakened." / "Your home has been asleep. We're building the part that wakes it up.") A single quiet CTA: *Enter* / *Begin* — inviting descent into the story, not "Sign up free."
-2. **The Word** — The katoikía origin, staged as a founding-myth moment: the Greek word large on screen, morphing/refining into "Katikaya." Ancient idea, re-engineered. Three sentences maximum. This is a brand ritual, not an about section.
+2. **The Word** — The katoikía origin, staged as a founding-myth moment: the Greek word large on screen, morphing/refining into "Katikiya." Ancient idea, re-engineered. Three sentences maximum. This is a brand ritual, not an about section.
 3. **The Awakening (Platform)** — The centerpiece. Scroll-driven sequence where the home comes alive pillar by pillar: Water → Energy → Presence, each with live-feeling ambient data visualization and one incisive line about what awareness means ("It feels a leak before you'd ever see one."). Closes with the sovereignty statement: the intelligence lives here, in the home — a moment visualizing data staying within the walls.
 4. **The Atelier (Store)** — Not a shop; a preview of a curated collection. Present the future starter collections (Water / Energy / Presence kits) as objects of desire — dramatic product-as-sculpture treatment, "Collection I — reserve interest" framing. No fake checkout; scarcity and anticipation instead.
 5. **Beyond the Home** — A restrained, confident teaser: the same awareness, extended to places that protect people — early-learning spaces, senior-care residences. One evocative line + private-inquiry contact. Signals scale of ambition in one breath.
@@ -81,7 +81,7 @@ Assured, spare, slightly literary. Short declarative sentences. Speaks about the
 - Restraint everywhere: if any element could appear on a generic Web3/SaaS template, replace it
 
 ## 9. Deliverable
-A single-scroll flagship landing experience following the seven movements above — desktop-first with full motion/interaction concept, gracefully adapted to mobile. Placeholder/generative visuals are acceptable; what must be real from day one is the *feeling*: that visiting katikaya.com is the moment someone first believes their home could be alive.
+A single-scroll flagship landing experience following the seven movements above — desktop-first with full motion/interaction concept, gracefully adapted to mobile. Placeholder/generative visuals are acceptable; what must be real from day one is the *feeling*: that visiting katikiya.com is the moment someone first believes their home could be alive.
 
 ## Assistant
 
@@ -99,13 +99,13 @@ _[tool: update_todos]_
 
 _[tool: ready_for_verification]_
 
-Katikaya.dc.html is live — the full seven-movement scroll: cinematic hero with live instrument strip, the κατοικία founding-myth moment, the Awakening with four generative canvas visualizations (water threads, energy flow, presence floorplan, data-inside-the-walls), the Atelier preview, the B2B teaser, the Founding Circle, and the coda. Bodoni Moda / Instrument Sans / IBM Plex Mono on bronze-black with brass + reserved cyan for live data; scroll reveals, magnetic CTAs, and continuously streaming telemetry throughout.
+Katikiya.dc.html is live — the full seven-movement scroll: cinematic hero with live instrument strip, the κατοικία founding-myth moment, the Awakening with four generative canvas visualizations (water threads, energy flow, presence floorplan, data-inside-the-walls), the Atelier preview, the B2B teaser, the Founding Circle, and the coda. Bodoni Moda / Instrument Sans / IBM Plex Mono on bronze-black with brass + reserved cyan for live data; scroll reveals, magnetic CTAs, and continuously streaming telemetry throughout.
 
 Tweaks available: ambient motion on/off, particle density, and the live-data light color. Product stills in the Atelier are placeholders — send real photography when you have it.
 
 ## User
 
-Save as standalone HTML: Katikaya.dc.html
+Save as standalone HTML: Katikiya.dc.html
 
 ## Assistant
 
@@ -126,7 +126,7 @@ Ready to download — works fully offline.
 ## User
 
 <pasted_text name="Pasted text (76 lines)">
-# Katikaya — Design Feedback, Round 2
+# Katikiya — Design Feedback, Round 2
 ## Directive: no placeholders anywhere, and every animation upgraded from "chart" to "cinema"
 
 The structure and typography are on the right track. Two things are failing the brief: the Atelier shows empty labeled frames, and the data visualizations read as basic line charts with dots. Fix both per the detail below. The governing rule for this round: **if a visual can't be photographed yet, it must be generated — beautifully — in code. A placeholder frame is never acceptable.**
