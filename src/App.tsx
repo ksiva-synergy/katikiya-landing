@@ -42,9 +42,9 @@ export function App() {
 
   // Simple routing switch
   let pageContent
-  if (currentPath === '/eldercare') {
+  if (currentPath === '/eldercare' || currentPath === '/elder-care') {
     pageContent = <Eldercare onNavigate={navigateTo} />
-  } else if (currentPath === '/toddlercare') {
+  } else if (currentPath === '/toddlercare' || currentPath === '/toddler-care') {
     pageContent = <Toddlercare onNavigate={navigateTo} />
   } else {
     pageContent = <MainLanding isMobile={isMobile} onNavigate={navigateTo} />
